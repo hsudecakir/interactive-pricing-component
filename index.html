@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/3ed2e8cef0.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="assets/css/main.css">
+  <script src="assets/js/interactive-pricing-component.js" defer></script>
+  <title>Interactive Pricing Component</title>
+</head>
+<body>
+  <div class="title">
+    <div class="title-position-container">
+      <img src="assets/images/circles.png">
+      <h1>Simple, traffic-based pricing</h1>
+      <p>Sign-up for our 30-day trial. <br>No credit card required. </p>
+    </div>
+  </div>
+  <div class="container">
+    <div class="range">
+      <div class="range-info">
+        <h2>100K PAGEVIEWS</h2>
+        <div class="price-info price-info--desktop">
+          <p class="price" id="pageViews">$50.00</p>
+          <p class="monthly">/ month</p>
+        </div>
+      </div>
+      <input type="range" min="0" max="100" step="1" value="50" id="pageViewRange">
+      <div class="price-info">
+        <p class="price" id="pageViewsMobile">$50.00</p>
+        <p class="monthly">/ month</p>
+      </div>
+      <div class="switch">
+        <p>Monthly Billing</p>
+        <div class="switch-button" id="switchBtn">
+          <span id="switchCircle"></span>
+          <span id="switchCircleActive"></span>
+        </div>
+        <div class="yearly">
+          <p>Yearly Billing</p>
+          <span class="discount">-25%</span>
+          <!-- <span class="yearly--desktop">25% discount</span> -->
+        </div>
+      </div>
+    </div>
+    <div class="trial">
+      <div class="trial-info">
+        <p><img src="assets/images/check.svg">Unlimited websites</p>
+        <p><img src="assets/images/check.svg">100% data ownership</p>
+        <p><img src="assets/images/check.svg">Email reports</p>
+      </div>
+      <button class="trial-button">Start my trial</button>
+    </div>
+  </div>
+</body>
+</html>
