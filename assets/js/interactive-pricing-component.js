@@ -2,6 +2,7 @@
 let isActive = true;
 
 function handlePageViewChange() {
+  pageViewsLeft.innerText = (Number(pageViewRange.value) / 16) * 100;
   if(isActive){
     pageViews.innerText = `$ ${Number(pageViewRange.value).toFixed(2)}`;
     pageViewsMobile.innerText = `$ ${Number(pageViewRange.value).toFixed(2)}`;
